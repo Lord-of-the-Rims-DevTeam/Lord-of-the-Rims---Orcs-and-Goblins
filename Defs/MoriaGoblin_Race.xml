@@ -11,12 +11,33 @@
 				<pawnsSpecificBackstories>true</pawnsSpecificBackstories>
 				<forcedRaceTraitEntries>
 					<li>
-                        <defName>Xenophobia</defName>
+                        <defName>Bloodlust</defName>
+                        <chance>50</chance>
+                    </li>
+					<li>
+                        <defName>Psychopath</defName>
+                        <chance>75</chance>
+                    </li>
+					<li>
+                        <defName>Abrasive</defName>
+                        <chance>50</chance>
+                    </li>
+					<li>
+                        <defName>AnnoyingVoice</defName>
+                        <chance>50</chance>
+                    </li>
+					<li>
+                        <defName>Neurotic</defName>
+                        <chance>50</chance>
+						<degree>1</degree>
+                    </li>
+					<li>
+                        <defName>Nerves</defName>
+                        <chance>25</chance>
 						<degree>-1</degree>
-                        <chance>10</chance>
                     </li>
                 </forcedRaceTraitEntries>
-				<maxDamageForSocialfight>6</maxDamageForSocialfight>
+				<!--<maxDamageForSocialfight>6</maxDamageForSocialfight>-->
 				<alienPartGenerator>      
 					<aliencrowntypes>
 						<li>Average_Normal</li>
@@ -76,24 +97,48 @@
                     <alienskincolorgen Class="ColorGenerator_Options">
                         <options>
                         <li>
-                            <weight>10</weight>
+                            <weight>1</weight>
                             <only>RGBA(1.0,1.0,1.0,1)</only>
                         </li>
                         <li>
-                            <weight>10</weight>
+                            <weight>5</weight>
                             <only>RGBA(0.5,0.5,0.5,1)</only>
                         </li>
                         <li>
-                            <weight>10</weight>
+                            <weight>5</weight>
                             <only>RGBA(0.3,0.3,0.3,1)</only>
                         </li>
-                        <li>
-                            <weight>5</weight>
-                            <only>RGBA(0.8,0.5,0.5,1)</only>
+						<li>
+                            <weight>15</weight>
+                            <only>RGBA(0.9,0.9,0.7,1)</only>
                         </li>
                         <li>
+                            <weight>15</weight>
+                            <only>RGBA(0.6,0.6,0.4,1)</only>
+                        </li>
+						<li>
+                            <weight>15</weight>
+                            <only>RGBA(0.8,0.8,0.6,1)</only>
+                        </li>
+						<li>
                             <weight>5</weight>
-                            <only>RGBA(0.6,0.3,0.0,1)</only>
+                            <only>RGBA(0.3,0.3,0.1,1)</only>
+                        </li>
+                        <li>
+                            <weight>2</weight>
+                            <only>RGBA(0.3,0.5,0.1,1)</only>
+                        </li>
+						<li>
+                            <weight>2</weight>
+                            <only>RGBA(0.5,0.7,0.3,1)</only>
+                        </li>
+						<li>
+                            <weight>2</weight>
+                            <only>RGBA(0.7,0.9,0.5,1)</only>
+                        </li>
+						<li>
+                            <weight>1</weight>
+                            <only>RGBA(0.3,0.5,0.6,1)</only>
                         </li>
                         </options>
                     </alienskincolorgen>
@@ -177,68 +222,80 @@
             <ComfyTemperatureMin>-60</ComfyTemperatureMin>
             <ComfyTemperatureMax>60</ComfyTemperatureMax>
             <LeatherAmount>20</LeatherAmount>
-            <ResearchSpeed>0.20</ResearchSpeed>
+            <ResearchSpeed>1.0</ResearchSpeed>
         </statBases>
-        <verbs>
-            <li>
-                <verbClass>Verb_MeleeAttack</verbClass>
-                <defaultCooldownTime>1.6</defaultCooldownTime>
-                <meleeDamageBaseAmount>14</meleeDamageBaseAmount>
-                <meleeDamageDef>Bite</meleeDamageDef>
-                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-      		  <surpriseAttack>
-        		  <extraMeleeDamages>
-        		    <li>
-          		    <def>Stun</def>
-          		    <amount>20</amount>
-        		    </li>
-        		  </extraMeleeDamages>
-      		  </surpriseAttack>
-            </li>
-            <li>
-                <verbClass>Verb_MeleeAttack</verbClass>
-                <defaultCooldownTime>1.85</defaultCooldownTime>
-                <meleeDamageBaseAmount>5</meleeDamageBaseAmount>
-                <meleeDamageDef>Blunt</meleeDamageDef>
-                <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
-            </li>
-            <li>
-                <verbClass>Verb_MeleeAttack</verbClass>
-                <defaultCooldownTime>1.85</defaultCooldownTime>
-                <meleeDamageBaseAmount>5</meleeDamageBaseAmount>
-                <meleeDamageDef>Blunt</meleeDamageDef>
-                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
-            </li>
-        </verbs>
+        <tools>
+		  <li>
+			<label>left fist</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>1.6</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>22</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<label>right fist</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>1.6</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>22</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>3</power>
+			<cooldownTime>1.8</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<commonality>0.2</commonality>
+		  </li>
+		</tools>
         <race>
             <thinkTreeMain>Humanlike</thinkTreeMain>
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
-            <lifeExpectancy>40</lifeExpectancy>
+            <lifeExpectancy>15</lifeExpectancy>
             <leatherColor>(235,235,235)</leatherColor>
             <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
             <leatherInsulation>0.5</leatherInsulation>
-            <leatherLabel>goblin skin</leatherLabel>
-            <leatherMarketValueFactor>4</leatherMarketValueFactor>
+            <leatherMarketValueFactor>1</leatherMarketValueFactor>
             <nameCategory>HumanStandard</nameCategory>
             <body>Human</body>
-            <baseBodySize>0.8</baseBodySize>
-            <baseHealthScale>0.8</baseHealthScale>
-            <foodType>OmnivoreHuman</foodType>
-            <nuzzleMtbHours>3</nuzzleMtbHours>
-			
-      <gestationPeriodDays>32.5</gestationPeriodDays>
-      <litterSizeCurve>
-        <points>
-          <li>(0.5, 0)</li>
-          <li>(1, .25)</li>
-          <li>(2, .25)</li>
-          <li>(3, .25)</li>
-		  <li>(4, .25)</li>
-		  <li>(5, 0)</li>
-        </points>
-      </litterSizeCurve>
+            <baseBodySize>0.6</baseBodySize>
+            <baseHealthScale>0.6</baseHealthScale>
+            <foodType>CarnivoreAnimal, AnimalProduct, Meat, Kibble, Processed, Corpse</foodType>
+			<gestationPeriodDays>20</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+				  <li>(0.5, 0)</li>
+				  <li>(1, .25)</li>
+				  <li>(2, .25)</li>
+				  <li>(3, .25)</li>
+				  <li>(4, .25)</li>
+				  <li>(5, 0)</li>
+				</points>
+			</litterSizeCurve>
             <lifeStageAges>
                 <li>
                     <def>HumanlikeBaby</def>
@@ -270,14 +327,11 @@
             </specialShadowData>
             <ageGenerationCurve>
                 <points>
-                    <li>(14,0)</li>
-                    <li>(16,100)</li>
-                    <li>(50,100)</li>
-                    <li>(60,30)</li>
-                    <li>(70,18)</li>
-                    <li>(80,10)</li>
-                    <li>(90,3)</li>
-                    <li>(100,0)</li>
+                    <li>(3,0)</li>
+                    <li>(5,100)</li>
+                    <li>(10,50)</li>
+                    <li>(15,5)</li>
+                    <li>(20,0)</li>
                 </points>
             </ageGenerationCurve>
             <hediffGiverSets>
@@ -285,24 +339,26 @@
             </hediffGiverSets>
         </race>
         <recipes>
-            <li>InstallPowerClaw</li>
-            <li>InstallScytherBlade</li>
-            <li>InstallBionicEye</li>
-            <li>InstallBionicArm</li>
-            <li>InstallBionicLeg</li>
-            <li>InstallSimpleProstheticArm</li>
-            <li>InstallSimpleProstheticLeg</li>
-            <li>InstallPegLeg</li>
-            <li>InstallDenture</li>
-            <li>InstallJoywire</li>
-            <li>InstallPainstopper</li>
-            <li>InstallNaturalHeart</li>
-            <li>InstallNaturalLung</li>
-            <li>InstallNaturalKidney</li>
-            <li>InstallNaturalLiver</li>
-            <li>ExciseCarcinoma</li>      
-            <li>RemoveBodyPart</li>
-            <li>Euthanize</li>
+			  <li>InstallPowerClaw</li>
+			  <li>InstallScytherBlade</li>
+			  <li>InstallBionicEye</li>
+			  <li>InstallBionicArm</li>
+			  <li>InstallBionicLeg</li>
+			  <li>InstallSimpleProstheticArm</li>
+			  <li>InstallSimpleProstheticLeg</li>
+			  <li>InstallPegLeg</li>
+			  <li>InstallDenture</li>
+			  <li>InstallJoywire</li>
+			  <li>InstallPainstopper</li>
+			  <li>InstallNaturalHeart</li>
+			  <li>InstallNaturalLung</li>
+			  <li>InstallNaturalKidney</li>
+			  <li>InstallNaturalLiver</li>
+			  <li>ExciseCarcinoma</li>
+			  <li>AdministerMechSerumHealer</li>
+			  <li>RemoveBodyPart</li>
+			  <li>Euthanize</li>
+			  <li>Anesthetize</li>
         </recipes>
 </AlienRace.ThingDef_AlienRace>
 </Defs>
