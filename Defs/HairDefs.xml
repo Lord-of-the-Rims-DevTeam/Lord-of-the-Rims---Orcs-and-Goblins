@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HairDef>
+    <defName>LotROG_Shaved</defName>
+    <label>goblin shaved</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/Shaved</texPath>
+		<hairTags>
+			<li>LotROG_OrcGoblin</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>LotROG_Tuft</defName>
+    <label>goblin tuft</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/Tuft</texPath>
+		<hairTags>
+			<li>LotROG_OrcGoblin</li>
+		</hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>LotROG_BraidedKnot</defName>
+    <label>goblin knot</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/Braidbun</texPath>
+		<hairTags>
+			<li>LotROG_OrcGoblin</li>
+		</hairTags>
+  </HairDef>
+
+  <HairDef>
+    <defName>LotROG_Scatman</defName>
+    <label>scatman</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/Scat</texPath>
+		<hairTags>
+			<li>LotROG_OrcGoblin</li>
+		</hairTags>
+  </HairDef>
+
+</Defs>

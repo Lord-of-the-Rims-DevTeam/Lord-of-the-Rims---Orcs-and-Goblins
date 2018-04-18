@@ -158,6 +158,9 @@
             <hairSettings>
                 <hasHair>true</hasHair>
                 <getsGreyAt>50</getsGreyAt>
+				<hairTags>
+				  <li>LotROG_OrcGoblin</li>
+				</hairTags>
             </hairSettings>
             <pawnKindSettings>
             <startingColonists>
@@ -165,7 +168,7 @@
                     <pawnKindEntries>
                         <li>
                             <kindDefs>
-                                <li>MoriaGoblin</li>
+                                <li>LotROG_MoriaGoblinColonist</li>
                             </kindDefs>
                             <chance>10.0</chance>
                         </li>
@@ -212,6 +215,28 @@
                 <li>EnvironmentDark</li>
                 <li>CabinFever</li>
                 </cannotReceiveThoughts>
+								<replacerList>
+                  <li>
+                    <original>AteInImpressiveDiningRoom</original>
+                    <replacer>LotROG_AteInImpressiveDiningRoom</replacer> 
+                  </li>
+                  <li>
+                    <original>JoyActivityInImpressiveRecRoom</original>
+                    <replacer>LotROG_JoyActivityInImpressiveRecRoom</replacer> 
+                  </li>                
+				  <li>
+                    <original>SleptInBedroom</original>
+                    <replacer>LotROG_SleptInBedroom</replacer> 
+                  </li>                
+				  <li>
+                    <original>SleptInBarracks</original>
+                    <replacer>LotROG_SleptInBarracks</replacer> 
+                  </li>          
+				  <li>
+                    <original>NeedBeauty</original>
+                    <replacer>LotROG_NeedBeauty</replacer> 
+                  </li>
+                </replacerList>
             </thoughtSettings>
         </alienRace>
         <!--<uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>-->

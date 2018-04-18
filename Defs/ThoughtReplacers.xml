@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>LotROG_AteInImpressiveDiningRoom</defName>
+		<durationDays>0.25</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>vile mess hall</label>
+				<description>I ate in the mess hall, and I found a maggot in my slop. Now THIS is a mess hall!</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<!-- awful -->
+			<li>
+				<label>disgustin' mess hall</label>
+				<description>I ate in the mess hall, and I found hair in my slop. Delicious!</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<!-- dull -->
+			<li>
+				<label>gross mess hall</label>
+				<description>I ate in the mess hall. Everything looked terrible, just like how i like it.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<!-- mediocre -->
+			<li>
+				<label>decent dining room</label>
+				<description>This place looks too nice for me.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>slightly impressive dining room</label>
+				<description>I don't like this fancy stuff.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>somewhat impressive dining room</label>
+				<description>I ate my slop in an impressive dinin' room, and that don't suit me none.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>very impressive dining room</label>
+				<description>I ate my slop in a very impressive dinin' room. Augh! It don't make me comfortable none</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>extremely impressive dining room</label>
+				<description>I ate my slop in some smancy pants dining room. Agh! It makes my stomach churn.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>unbelievably impressive dining room</label>
+				<description>I ate my slop in an unbelievably impressive dinin' room. Augh! This would look great with some splintered wood. I want to break every single thing I can see.</description>
+				<baseMoodEffect>-7</baseMoodEffect>
+			</li>
+			<li>
+				<label>fancy smancy dining room</label>
+				<description>I ate my slop in a wonderful dining room. Eugh! Where is my filth?! I'm gonna go blind in this awful place.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>LotROG_JoyActivityInImpressiveRecRoom</defName>
+		<durationDays>0.25</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>vile rec room</label>
+				<description>I had fun smashin' up a filthy rec room.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<!-- awful -->
+			<li>
+				<label>disgustin' rec room</label>
+				<description>I had fun in a smelly rec room. Just the way I like it!</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<!-- dull -->
+			<li>
+				<label>gross rec room</label>
+				<description>I had fun in a gross rec room. Good stuff.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<!-- mediocre -->
+			<li>
+				<label>decent rec room</label>
+				<description>I had fun in a decent rec room. Bleh. Needs more filth!</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>slightly impressive rec room</label>
+				<description>I didn't have fun. Gah! I hate it.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>somewhat impressive rec room</label>
+				<description>I didn't have fun. Eugh. Awful!</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>very impressive rec room</label>
+				<description>I didn't have fun. The good smells are still burning my nostrils!</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>extremely impressive rec room</label>
+				<description>Aaaaaaaaagh! It burns the senses, it does.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>unbelievably impressive rec room</label>
+				<description>Argh! I want to SMASH it ALL!</description>
+				<baseMoodEffect>-7</baseMoodEffect>
+			</li>
+			<li>
+				<label>fancy smancy rec room</label>
+				<description>Eugh!! Why are you torturing us with this?!</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+  <ThoughtDef>
+    <defName>LotROG_SleptInBedroom</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>vile bedroom</label>
+        <description>My bedroom is disgusting, just the way I likes it. Filth is the best pillow, especially the rat bits!</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>disgustin' bedroom</label>
+        <description>My bedroom is awful, just the way I likes it. Why do I gotta go outside to make wee anyways? Warms the bed, says I.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <!-- dull -->
+      <li>
+        <label>gross bedroom</label>
+        <description>My bedroom is bad, just the like I likes it.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <!-- mediocre -->
+      <li>
+        <label>decent bedroom</label>
+        <description>My bedroom isn't very interesting. Now if it had a urine stain, it would smell nicer.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>slightly impressive bedroom</label>
+        <description>My bedroom might look actually slightly impressive, but it could use a few more flies and spiders about.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+      <li>
+        <label>impressive bedroom</label>
+        <description>My bedroom might look impressive to man-flesh, but it doesn't impress me none.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>very impressive bedroom</label>
+        <description>This place is horrible. Not a stain in sight!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>extremely impressive bedroom</label>
+        <description>I NEEDS me filth! I can't find a spot anywhere.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>unbelievably impressive bedroom</label>
+        <description>THIS is NOT for my sort at all! I'd rather sleep outside in a hole!</description>
+        <baseMoodEffect>-7</baseMoodEffect>
+      </li>
+      <li>
+        <label>fancy smancy bedroom</label>
+        <description>My bedroom might look the best place one can ever imagine. Don't be fooled none. It's crap. Give me my maggots and mold anyday over this man-flesh appealing nonsense.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>LotROG_SleptInBarracks</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>vile barrack</label>
+        <description>My barrack is a disgusting place. There is so much filth to share! So many mystery stains. I wonder how many are still fresh?</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>disgusting barrack</label>
+        <description>I'm living in a gross barrack with the others. Nothing smells better than blood, vomit, and a bit of filth in the morning.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>gross barrack</label>
+        <description>My barrack is alright with a few stains here and there. Give it a little mold, and it's good to go.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>decent barrack</label>
+        <description>My barrack is decent, but it could use more filth, says I.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+      <li>
+        <label>slightly impressive barrack</label>
+        <description>My barrack is a nice place. Filth-ridden rooms or no rooms at all, says I.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>impressive barrack</label>
+        <description>My barrack is impressive. I hates it.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+      <li>
+        <label>very impressive barrack</label>
+        <description>My barrack is very impressive. Doesn't please me none, tho'.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>extremely impressive barrack</label>
+        <description>My barrack is extremely impressive. Let me know when I can break it.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>unbelievably impressive barrack</label>
+        <description>Spots, stains, filth, bugs -- just bury me in filth and give me anything but this barrack!</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>fancy smancy barrack</label>
+        <description>I HATE this with a fury. Grab an axe and help me fix this place right up.</description>
+        <baseMoodEffect>-7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  
+  <ThoughtDef>
+    <defName>LotROG_NeedBeauty</defName>
+    <workerClass>ThoughtWorker_NeedBeauty</workerClass>
+    <stages>
+      <li>
+        <label>vile environment</label>
+        <description>Everything here is caked with enough filth to eat. Yeaaaaah!</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+      <li>
+        <label>disgusting environment</label>
+        <description>This place turns up my nose real good, and I love a good stink.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>gross environment</label>
+        <description>I always fancy myself a few bugs around to squish and snack on.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>pleasant environment</label>
+        <description>This place is shite.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>very pleasant environment</label>
+        <description>This place right turns my gut. It's not beautiful, not a bit, not at all like my family's mess pile.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>beautiful environment</label>
+        <description>Get me out of here!!!</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  
+</Defs>
