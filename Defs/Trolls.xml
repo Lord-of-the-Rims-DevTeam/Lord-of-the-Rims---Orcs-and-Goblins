@@ -37,6 +37,9 @@
 			<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
 		</li>
 	</comps>
+	<tradeability>Never</tradeability>
+	<destroyOnDrop>True</destroyOnDrop>
+	<menuHidden>True</menuHidden>
 	</ThingDef>
 
 
