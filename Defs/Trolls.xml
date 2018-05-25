@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>LotR_TrollAxe</defName>
+		<label>troll axe</label>
+		<description>A refined club, engineered for efficient swinging and deadly impacts.</description>
+		<graphicData>
+			<texPath>TrollAxe/trollhammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.9</drawSize>
+		</graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>Troll</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14.3</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<comps>
+		<li>
+			<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+		</li>
+	</comps>
+	</ThingDef>
+
+
+
+	  <ThingDef ParentName="AnimalThingBase">
+    <defName>LotR_BlueTroll</defName>
+    <label>olag hai</label>
+    <description>Giant, solitary herbivores. Long extinct after being wiped out by the natives of Earth's American continent, the megasloth was later brought back using advanced cloning and artificial gestators.</description>
+    <statBases>
+      <MoveSpeed>2.8</MoveSpeed>
+      <ComfyTemperatureMin>-45</ComfyTemperatureMin>
+      <MarketValue>1100</MarketValue>
+    </statBases>
+    <tools>
+    </tools>
+    <race>
+      <body>Human</body>
+      <baseHungerRate>2.0</baseHungerRate>
+      <baseBodySize>4.0</baseBodySize>
+      <baseHealthScale>3.6</baseHealthScale>
+      <foodType>Meat</foodType>
+      <leatherColor>(189,161,116)</leatherColor>
+      <leatherInsulation>1.0</leatherInsulation>
+      <gestationPeriodDays>60</gestationPeriodDays>
+      <wildness>0.97</wildness>
+      <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+	  <intelligence>ToolUser</intelligence>
+      <trainableIntelligence>Advanced</trainableIntelligence>
+      <nuzzleMtbHours>120</nuzzleMtbHours>
+      <lifeExpectancy>20</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.0</minAge>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+	</ThingDef>
+	
+	<PawnKindDef>
+		<defName>LotR_BlueTroll</defName>
+		<label>olag hai</label>
+		<race>LotR_BlueTroll</race>
+		<combatPower>160</combatPower>
+		<defaultFactionType>Mechanoid</defaultFactionType>
+		<aiAvoidCover>true</aiAvoidCover>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BlueTroll/bluetroll</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BlueTroll/bluetroll</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BlueTroll/bluetroll</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>4</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>5000</min>
+			<max>5000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>Troll</li>
+		</weaponTags>
+	</PawnKindDef>
+</Defs>
