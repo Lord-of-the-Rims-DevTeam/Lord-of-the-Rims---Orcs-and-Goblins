@@ -146,9 +146,9 @@
                         </li>
                         </options>
                     </alienskincolorgen>
-                    <customDrawSize>(0.82, 0.82)</customDrawSize>
-					<customHeadDrawSize>(0.8, 0.8)</customHeadDrawSize>
-                    <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize>
+                    <customDrawSize>(0.86, 0.86)</customDrawSize>
+					<customHeadDrawSize>(0.86, 0.86)</customHeadDrawSize>
+                    <customPortraitDrawSize>(0.86, 0.86)</customPortraitDrawSize>
 					<headOffset>(0.0, -0.1)</headOffset> 
                 </alienPartGenerator>
 		    </generalSettings>
@@ -185,7 +185,7 @@
             <alienslavekinds>
                 <li>
                     <kindDefs>
-                        <li>MordorOrc</li>
+                        <li>LOTR_MordorOrc</li>
                     </kindDefs>
                     <chance>5.0</chance>
                 </li>
@@ -193,7 +193,7 @@
             <alienrefugeekinds>
                 <li>
                     <kindDefs>
-                        <li>MordorOrc</li>
+                        <li>LOTR_MordorOrc</li>
                     </kindDefs>
                     <chance>10.0</chance>
                 </li>
@@ -203,7 +203,7 @@
                     <pawnKindEntries>
                         <li>
                             <kindDefs>
-                                <li>MordorOrc</li>
+                                <li>LOTR_MordorOrc</li>
                             </kindDefs>
                             <chance>10.0</chance>
                         </li>

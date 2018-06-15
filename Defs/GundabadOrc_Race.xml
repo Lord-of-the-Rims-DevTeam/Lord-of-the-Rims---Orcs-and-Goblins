@@ -2,9 +2,9 @@
 <Defs>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-        <defName>Alien_MoriaGoblin</defName>
-        <label>moria goblin</label>
-        <description>Moria Goblin description</description>
+        <defName>Alien_GundabadOrc</defName>
+        <label>gundabad orc</label>
+        <description>gundabad Orc description</description>
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.9</maleGenderProbability>    
@@ -12,7 +12,7 @@
 				<forcedRaceTraitEntries>
 					<li>
                         <defName>Bloodlust</defName>
-                        <chance>50</chance>
+                        <chance>75</chance>
                     </li>
 					<li>
                         <defName>Psychopath</defName>
@@ -20,7 +20,7 @@
                     </li>
 					<li>
                         <defName>Abrasive</defName>
-                        <chance>50</chance>
+                        <chance>75</chance>
                     </li>
 					<li>
                         <defName>AnnoyingVoice</defName>
@@ -28,8 +28,8 @@
                     </li>
 					<li>
                         <defName>Neurotic</defName>
-                        <chance>50</chance>
-						<degree>1</degree>
+                        <chance>25</chance>
+						<degree>2</degree>
                     </li>
 					<li>
                         <defName>Nerves</defName>
@@ -43,56 +43,59 @@
 						<li>Average_Normal</li>
 					</aliencrowntypes>
                     <alienbodytypes>
-                        <li>Thin</li>
+                        <li>Male</li>
                     </alienbodytypes>
 					<useGenderedHeads>false</useGenderedHeads>
-                  <bodyAddons>
-		    <li>
-		      <path>MoriaGoblin/Ears/moriaEar</path>
-			  <bodyPart>Head</bodyPart>
-			  <inFrontOfBody>true</inFrontOfBody>
-			  <layerOffset>0</layerOffset>
-			  <offsets>
-				  <front>
-					<bodyTypes>
-						<Male>(-0.42,0.36)</Male>
-						<Female>(-0.42,0.36)</Female>
-						<Fat>(-0.42,0.36)</Fat>
-						<Thin>(-0.42,0.36)</Thin>
-					</bodyTypes>
-					<crownTypes>
-						<Average_Normal>(0,0.00)</Average_Normal>
-					</crownTypes>
-				  </front>
-				  <back>
-					<bodyTypes>
-						<Male>(0,0.69)</Male>
-						<Female>(0,0.69)</Female>
-						<Fat>(0,0.69)</Fat>
-						<Thin>(0,0.69)</Thin>
-					</bodyTypes>
-					<crownTypes>
-						<Average_Normal>(0,0.0)</Average_Normal>
-					</crownTypes>
-				  </back>
-				  <side>
-					<bodyTypes>
-						<Male>(-0.5,0.35)</Male>
-						<Female>(-0.5,0.35)</Female>
-						<Fat>(-0.5,0.35)</Fat>
-						<Thin>(-0.5,0.35)</Thin>
-					</bodyTypes>
-					<crownTypes>
-						<Average_Normal>(0,0.0)</Average_Normal>
-					</crownTypes>
-				  </side>
-			  </offsets>
-		      <useSkinColor>true</useSkinColor>
-			  <hiddenUnderApparelFor>
-                <li>FullHead</li>
-              </hiddenUnderApparelFor>
-		    </li>
-		  </bodyAddons>
+                    <bodyAddons>
+						<li>
+						  <path>GundabadOrc/Ears/gundabadEar</path>
+						  <bodyPart>Head</bodyPart>
+						  <inFrontOfBody>true</inFrontOfBody>
+						  <layerOffset>0</layerOffset>
+						  <offsets>
+							  <front>
+								<bodyTypes>
+									<Male>(-0.42,0.46)</Male>
+									<Female>(-0.42,0.46)</Female>
+									<Fat>(-0.42,0.46)</Fat>
+									<Thin>(-0.42,0.46)</Thin>
+									<Hulk>(-0.42,0.46)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Normal>(0,0.1)</Average_Normal>
+								</crownTypes>
+							  </front>
+							  <back>
+								<bodyTypes>
+									<Male>(0,0.82)</Male>
+									<Female>(0,0.82)</Female>
+									<Fat>(0,0.82)</Fat>
+									<Thin>(0,0.82)</Thin>
+									<Hulk>(0,0.82)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Normal>(0,0.1)</Average_Normal>
+								</crownTypes>
+							  </back>
+							  <side>
+								<bodyTypes>
+									<Male>(-0.5,0.5)</Male>
+									<Female>(-0.5,0.5)</Female>
+									<Fat>(-0.5,0.5)</Fat>
+									<Thin>(-0.5,0.5)</Thin>
+									<Hulk>(-0.5,0.5)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Normal>(0,0.1)</Average_Normal>
+								</crownTypes>
+							  </side>
+						  </offsets>
+						  <useSkinColor>true</useSkinColor>
+						  <hiddenUnderApparelFor>
+							<li>FullHead</li>
+						  </hiddenUnderApparelFor>
+						</li>
+					  </bodyAddons>
 
                     <alienskincolorgen Class="ColorGenerator_Options">
                         <options>
@@ -101,40 +104,44 @@
                             <only>RGBA(1.0,1.0,1.0,1)</only>
                         </li>
                         <li>
-                            <weight>5</weight>
+                            <weight>15</weight>
                             <only>RGBA(0.5,0.5,0.5,1)</only>
                         </li>
                         <li>
-                            <weight>5</weight>
+                            <weight>15</weight>
                             <only>RGBA(0.3,0.3,0.3,1)</only>
                         </li>
 						<li>
-                            <weight>15</weight>
-                            <only>RGBA(0.9,0.9,0.7,1)</only>
+                            <weight>25</weight>
+                            <only>RGBA(0.9,0.8,0.7,1)</only>
                         </li>
                         <li>
-                            <weight>15</weight>
-                            <only>RGBA(0.6,0.6,0.4,1)</only>
+                            <weight>25</weight>
+                            <only>RGBA(0.6,0.5,0.4,1)</only>
                         </li>
 						<li>
-                            <weight>15</weight>
-                            <only>RGBA(0.8,0.8,0.6,1)</only>
+                            <weight>25</weight>
+                            <only>RGBA(0.8,0.7,0.6,1)</only>
                         </li>
 						<li>
-                            <weight>5</weight>
-                            <only>RGBA(0.3,0.3,0.1,1)</only>
+                            <weight>2</weight>
+                            <only>RGBA(0.3,0.2,0.1,1)</only>
                         </li>
                         <li>
                             <weight>2</weight>
-                            <only>RGBA(0.3,0.5,0.1,1)</only>
+                            <only>RGBA(0.8,0.4,0.5,1)</only>
                         </li>
 						<li>
-                            <weight>2</weight>
-                            <only>RGBA(0.5,0.7,0.3,1)</only>
+                            <weight>25</weight>
+                            <only>RGBA(1.0,0.8,0.7,1)</only>
+                        </li>
+                        <li>
+                            <weight>25</weight>
+                            <only>RGBA(0.7,0.5,0.4,1)</only>
                         </li>
 						<li>
-                            <weight>2</weight>
-                            <only>RGBA(0.7,0.9,0.5,1)</only>
+                            <weight>25</weight>
+                            <only>RGBA(0.9,0.7,0.6,1)</only>
                         </li>
 						<li>
                             <weight>1</weight>
@@ -142,25 +149,22 @@
                         </li>
                         </options>
                     </alienskincolorgen>
-                    <customDrawSize>(0.74, 0.74)</customDrawSize>
-					<customHeadDrawSize>(0.74, 0.74)</customHeadDrawSize>
-                    <customPortraitDrawSize>(0.74, 0.74)</customPortraitDrawSize>
-					<headOffset>(0, -0.2)</headOffset>    
+                    <customDrawSize>(0.9, 0.9)</customDrawSize>
+					<customHeadDrawSize>(0.9, 0.9)</customHeadDrawSize>
+                    <customPortraitDrawSize>(0.9, 0.9)</customPortraitDrawSize>
+					<headOffset>(0.0, -0.0)</headOffset> 
                 </alienPartGenerator>
 		    </generalSettings>
 		
             <graphicPaths>
                 <li>
-                    <head>MoriaGoblin/Heads/</head>
+                    <head>GundabadOrc/Heads/</head>
                 </li>
             </graphicPaths>
 		
             <hairSettings>
                 <hasHair>true</hasHair>
                 <getsGreyAt>50</getsGreyAt>
-				<hairTags>
-				  <li>LotROG_OrcGoblin</li>
-				</hairTags>
             </hairSettings>
             <pawnKindSettings>
             <startingColonists>
@@ -168,7 +172,7 @@
                     <pawnKindEntries>
                         <li>
                             <kindDefs>
-                                <li>LotROG_MoriaGoblinColonist</li>
+                                <li>GundabadOrc</li>
                             </kindDefs>
                             <chance>10.0</chance>
                         </li>
@@ -181,7 +185,7 @@
             <alienslavekinds>
                 <li>
                     <kindDefs>
-                        <li>MoriaGoblin</li>
+                        <li>GundabadOrc</li>
                     </kindDefs>
                     <chance>5.0</chance>
                 </li>
@@ -189,7 +193,7 @@
             <alienrefugeekinds>
                 <li>
                     <kindDefs>
-                        <li>MoriaGoblin</li>
+                        <li>GundabadOrc</li>
                     </kindDefs>
                     <chance>10.0</chance>
                 </li>
@@ -199,7 +203,7 @@
                     <pawnKindEntries>
                         <li>
                             <kindDefs>
-                                <li>LOTR_MoriaGoblin</li>
+                                <li>GundabadOrc</li>
                             </kindDefs>
                             <chance>10.0</chance>
                         </li>
@@ -215,39 +219,17 @@
                 <li>EnvironmentDark</li>
                 <li>CabinFever</li>
                 </cannotReceiveThoughts>
-								<replacerList>
-                  <li>
-                    <original>AteInImpressiveDiningRoom</original>
-                    <replacer>LotROG_AteInImpressiveDiningRoom</replacer> 
-                  </li>
-                  <li>
-                    <original>JoyActivityInImpressiveRecRoom</original>
-                    <replacer>LotROG_JoyActivityInImpressiveRecRoom</replacer> 
-                  </li>                
-				  <li>
-                    <original>SleptInBedroom</original>
-                    <replacer>LotROG_SleptInBedroom</replacer> 
-                  </li>                
-				  <li>
-                    <original>SleptInBarracks</original>
-                    <replacer>LotROG_SleptInBarracks</replacer> 
-                  </li>          
-				  <li>
-                    <original>NeedBeauty</original>
-                    <replacer>LotROG_NeedBeauty</replacer> 
-                  </li>
-                </replacerList>
             </thoughtSettings>
         </alienRace>
         <!--<uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>-->
         <statBases>
             <MarketValue>500</MarketValue>
-            <MoveSpeed>4.5</MoveSpeed>
+            <MoveSpeed>4.2</MoveSpeed>
             <Flammability>1.0</Flammability>
             <ComfyTemperatureMin>-60</ComfyTemperatureMin>
             <ComfyTemperatureMax>60</ComfyTemperatureMax>
             <LeatherAmount>20</LeatherAmount>
-            <ResearchSpeed>1.0</ResearchSpeed>
+            <ResearchSpeed>0.8</ResearchSpeed>
         </statBases>
         <tools>
 		  <li>
@@ -255,7 +237,7 @@
 			<capacities>
 			  <li>Blunt</li>
 			</capacities>
-			<power>5</power>
+			<power>6</power>
 			<cooldownTime>1.6</cooldownTime>
 			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 			<surpriseAttack>
@@ -272,7 +254,7 @@
 			<capacities>
 			  <li>Blunt</li>
 			</capacities>
-			<power>5</power>
+			<power>6</power>
 			<cooldownTime>1.6</cooldownTime>
 			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 			<surpriseAttack>
@@ -289,7 +271,7 @@
 			<capacities>
 			  <li>Blunt</li>
 			</capacities>
-			<power>3</power>
+			<power>4</power>
 			<cooldownTime>1.8</cooldownTime>
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			<commonality>0.2</commonality>
@@ -300,15 +282,15 @@
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
-            <lifeExpectancy>15</lifeExpectancy>
+            <lifeExpectancy>20</lifeExpectancy>
             <leatherColor>(235,235,235)</leatherColor>
             <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
             <leatherInsulation>0.5</leatherInsulation>
             <leatherMarketValueFactor>1</leatherMarketValueFactor>
             <nameCategory>HumanStandard</nameCategory>
             <body>Human</body>
-            <baseBodySize>0.6</baseBodySize>
-            <baseHealthScale>0.6</baseHealthScale>
+            <baseBodySize>0.8</baseBodySize>
+            <baseHealthScale>0.8</baseHealthScale>
             <foodType>CarnivoreAnimal, AnimalProduct, Meat, Kibble, Processed, Corpse</foodType>
 			<gestationPeriodDays>20</gestationPeriodDays>
 			<litterSizeCurve>
@@ -354,9 +336,10 @@
                 <points>
                     <li>(3,0)</li>
                     <li>(5,100)</li>
-                    <li>(10,50)</li>
-                    <li>(15,5)</li>
-                    <li>(20,0)</li>
+                    <li>(10,80)</li>
+                    <li>(15,25)</li>
+                    <li>(20,10)</li>
+                    <li>(25,0)</li>
                 </points>
             </ageGenerationCurve>
             <hediffGiverSets>
