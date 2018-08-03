@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="LotROG_BuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>LotROG_WallOrc</defName>
     <label>orc wall</label>
     <thingClass>Building</thingClass>
-    <category>Building</category><thingCategories><li>Buildings</li></thingCategories>
+    <category>Building</category>
     <description>This irregularly constructed wall with rocky foundations provides both defense and shelter.</description>
     <graphicData>
       <texPath>Things/OrcWall/aPurpleApple_OrcWall</texPath>

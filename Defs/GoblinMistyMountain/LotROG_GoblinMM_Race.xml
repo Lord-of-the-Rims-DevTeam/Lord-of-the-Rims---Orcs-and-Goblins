@@ -1,10 +1,64 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
+  <AlienRace.RaceSettings>
+    <defName>LotROG_GoblinMistyMountainsSettings</defName>
+	<pawnKindSettings>
+	<startingColonists>
+		<li>
+			<pawnKindEntries>
+				<li>
+					<kindDefs>
+						<li>LotROG_GoblinMistyMountainsColonist</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+			</pawnKindEntries>
+			<factionDefs>
+				<li>PlayerColony</li> 
+			</factionDefs>
+		</li>
+	</startingColonists>
+	<alienslavekinds>
+		<li>
+			<kindDefs>
+				<li>LotROG_GoblinMistyMountains</li>
+			</kindDefs>
+			<chance>5.0</chance>
+		</li>
+	</alienslavekinds>
+	<alienrefugeekinds>
+		<li>
+			<kindDefs>
+				<li>LotROG_GoblinMistyMountains</li>
+			</kindDefs>
+			<chance>10.0</chance>
+		</li>
+	</alienrefugeekinds>
+	<alienwandererkinds>
+		<li>
+			<pawnKindEntries>
+				<li>
+					<kindDefs>
+						<li>LotROG_GoblinMistyMountains</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+			</pawnKindEntries>
+			<factionDefs>
+				<li>PlayerColony</li> 
+			</factionDefs>
+		</li>
+	</alienwandererkinds>
+	</pawnKindSettings>
+  </AlienRace.RaceSettings>
+
+
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-        <defName>Alien_UrukHai</defName>
-        <label>uruk hai</label>
-        <description>Alien_UrukHai description</description>
+        <defName>Alien_GoblinMistyMountains</defName>
+        <label>misty mountain goblin</label>
+        <description>Misty Mountain Goblin description</description>
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.9</maleGenderProbability>    
@@ -12,29 +66,34 @@
 				<forcedRaceTraitEntries>
 					<li>
                         <defName>Bloodlust</defName>
-                        <chance>75</chance>
+                        <chance>25</chance>
                     </li>
 					<li>
                         <defName>Psychopath</defName>
                         <chance>75</chance>
                     </li>
 					<li>
-                        <defName>Masochist</defName>
-                        <chance>75</chance>
-                    </li>
-					<li>
-                        <defName>CreepyBreathing</defName>
+                        <defName>Abrasive</defName>
                         <chance>50</chance>
                     </li>
 					<li>
-                        <defName>Nerves</defName>
-                        <chance>25</chance>
+                        <defName>AnnoyingVoice</defName>
+                        <chance>50</chance>
+                    </li>
+					<li>
+                        <defName>Neurotic</defName>
+                        <chance>50</chance>
 						<degree>2</degree>
                     </li>
 					<li>
                         <defName>Nerves</defName>
-                        <chance>50</chance>
-						<degree>1</degree>
+                        <chance>25</chance>
+						<degree>-1</degree>
+                    </li>
+					<li>
+                        <defName>Nerves</defName>
+                        <chance>5</chance>
+						<degree>-2</degree>
                     </li>
                 </forcedRaceTraitEntries>
 				<!--<maxDamageForSocialfight>6</maxDamageForSocialfight>-->
@@ -43,152 +102,117 @@
 						<li>Average_Normal</li>
 					</aliencrowntypes>
                     <alienbodytypes>
-                        <li>Hulk</li>
+                        <li>Thin</li>
                     </alienbodytypes>
 					<useGenderedHeads>false</useGenderedHeads>
-                   <bodyAddons>
-						<li>
-						  <path>UrukHai/Ears/urukEar</path>
-						  <bodyPart>Head</bodyPart>
-						  <inFrontOfBody>true</inFrontOfBody>
-						  <layerOffset>0</layerOffset>
-						  <offsets>
-							  <front>
-								<bodyTypes>
-									<Male>(-0.42,0.46)</Male>
-									<Female>(-0.42,0.46)</Female>
-									<Fat>(-0.42,0.46)</Fat>
-									<Thin>(-0.42,0.46)</Thin>
-									<Hulk>(-0.42,0.46)</Hulk>
-								</bodyTypes>
-								<crownTypes>
-									<Average_Normal>(0,0.1)</Average_Normal>
-								</crownTypes>
-							  </front>
-							  <back>
-								<bodyTypes>
-									<Male>(0,0.82)</Male>
-									<Female>(0,0.82)</Female>
-									<Fat>(0,0.82)</Fat>
-									<Thin>(0,0.82)</Thin>
-									<Hulk>(0,0.82)</Hulk>
-								</bodyTypes>
-								<crownTypes>
-									<Average_Normal>(0,0.1)</Average_Normal>
-								</crownTypes>
-							  </back>
-							  <side>
-								<bodyTypes>
-									<Male>(-0.5,0.5)</Male>
-									<Female>(-0.5,0.5)</Female>
-									<Fat>(-0.5,0.5)</Fat>
-									<Thin>(-0.5,0.5)</Thin>
-									<Hulk>(-0.5,0.5)</Hulk>
-								</bodyTypes>
-								<crownTypes>
-									<Average_Normal>(0,0.1)</Average_Normal>
-								</crownTypes>
-							  </side>
-						  </offsets>
-						  <useSkinColor>true</useSkinColor>
-						  <hiddenUnderApparelFor>
-							<li>FullHead</li>
-						  </hiddenUnderApparelFor>
-						</li>
-					  </bodyAddons>
+                    <bodyAddons>
+		    <li>
+		      <path>MistyMountainGoblin/Ears/mistyEar</path>
+			  <bodyPart>Head</bodyPart>
+			  <inFrontOfBody>true</inFrontOfBody>
+			  <layerOffset>0</layerOffset>
+			  <offsets>
+				  <south>
+					<bodyTypes>
+						<Male>(-0.42,0.36)</Male>
+						<Female>(-0.42,0.36)</Female>
+						<Fat>(-0.42,0.36)</Fat>
+						<Thin>(-0.42,0.36)</Thin>
+					</bodyTypes>
+					<crownTypes>
+						<Average_Normal>(0,0)</Average_Normal>
+					</crownTypes>
+				  </south>
+				  <north>
+					<bodyTypes>
+						<Male>(0,0.69)</Male>
+						<Female>(0,0.69)</Female>
+						<Fat>(0,0.69)</Fat>
+						<Thin>(0,0.69)</Thin>
+					</bodyTypes>
+					<crownTypes>
+						<Average_Normal>(0,0)</Average_Normal>
+					</crownTypes>
+				  </north>
+				  <east>
+					<bodyTypes>
+						<Male>(-0.5,0.35)</Male>
+						<Female>(-0.5,0.35)</Female>
+						<Fat>(-0.5,0.35)</Fat>
+						<Thin>(-0.5,0.35)</Thin>
+					</bodyTypes>
+					<crownTypes>
+						<Average_Normal>(0,0)</Average_Normal>
+					</crownTypes>
+				  </east>
+			  </offsets>
+		      <useSkinColor>true</useSkinColor>
+			  <hiddenUnderApparelFor>
+                <li>FullHead</li>
+              </hiddenUnderApparelFor>
+		    </li>
+		  </bodyAddons>
 
                     <alienskincolorgen Class="ColorGenerator_Options">
                         <options>
                         <li>
-                            <weight>5</weight>
+                            <weight>1</weight>
                             <only>RGBA(1.0,1.0,1.0,1)</only>
                         </li>
                         <li>
-                            <weight>10</weight>
+                            <weight>5</weight>
                             <only>RGBA(0.5,0.5,0.5,1)</only>
                         </li>
                         <li>
-                            <weight>10</weight>
+                            <weight>5</weight>
                             <only>RGBA(0.3,0.3,0.3,1)</only>
                         </li>
+						<li>
+                            <weight>25</weight>
+                            <only>RGBA(1.0,0.8,0.8,1)</only>
+                        </li>
                         <li>
-                            <weight>15</weight>
-                            <only>RGBA(0.8,0.5,0.5,1)</only>
+                            <weight>25</weight>
+                            <only>RGBA(0.7,0.5,0.5,1)</only>
                         </li>
 						<li>
-                            <weight>15</weight>
-                            <only>RGBA(0.8,0.3,0.3,1)</only>
+                            <weight>25</weight>
+                            <only>RGBA(0.9,0.7,0.7,1)</only>
+                        </li>
+						<li>
+                            <weight>2</weight>
+                            <only>RGBA(0.4,0.2,0.2,1)</only>
+                        </li>
+                        <li>
+                            <weight>2</weight>
+                            <only>RGBA(0.6,0.4,0.4,1)</only>
+                        </li>
+						<li>
+                            <weight>1</weight>
+                            <only>RGBA(0.3,0.5,0.6,1)</only>
                         </li>
                         </options>
                     </alienskincolorgen>
-                    <customDrawSize>(1.0, 1.0)</customDrawSize>
-					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
-                    <customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
-					<headOffset>(0.0, -0.0)</headOffset>   
+                    <customDrawSize>(0.8, 0.8)</customDrawSize>
+					<customHeadDrawSize>(0.8, 0.8)</customHeadDrawSize>
+                    <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize>
+					<headOffset>(0.0, -0.15)</headOffset>   
                 </alienPartGenerator>
 		    </generalSettings>
 		
             <graphicPaths>
                 <li>
-                    <head>UrukHai/Heads/</head>
+                    <head>MistyMountainGoblin/Heads/</head>
                 </li>
             </graphicPaths>
 		
             <hairSettings>
                 <hasHair>true</hasHair>
-                <getsGreyAt>20</getsGreyAt>
+                <getsGreyAt>50</getsGreyAt>
 				<hairTags>
 				  <li>LotROG_OrcGoblin</li>
 				</hairTags>
             </hairSettings>
-            <pawnKindSettings>
-            <startingColonists>
-                <li>
-                    <pawnKindEntries>
-                        <li>
-                            <kindDefs>
-                                <li>LotROG_UrukHaiColonist</li>
-                            </kindDefs>
-                            <chance>10.0</chance>
-                        </li>
-                    </pawnKindEntries>
-                    <factionDefs>
-                        <li>PlayerColony</li> 
-                    </factionDefs>
-                </li>
-            </startingColonists>
-            <alienslavekinds>
-                <li>
-                    <kindDefs>
-                        <li>UrukHai</li>
-                    </kindDefs>
-                    <chance>5.0</chance>
-                </li>
-            </alienslavekinds>
-            <alienrefugeekinds>
-                <li>
-                    <kindDefs>
-                        <li>UrukHai</li>
-                    </kindDefs>
-                    <chance>10.0</chance>
-                </li>
-            </alienrefugeekinds>
-            <alienwandererkinds>
-                <li>
-                    <pawnKindEntries>
-                        <li>
-                            <kindDefs>
-                                <li>UrukHai</li>
-                            </kindDefs>
-                            <chance>10.0</chance>
-                        </li>
-                    </pawnKindEntries>
-                    <factionDefs>
-                        <li>PlayerColony</li> 
-                    </factionDefs>
-                </li>
-            </alienwandererkinds>
-            </pawnKindSettings>
             <thoughtSettings>
                 <cannotReceiveThoughts>
                 <li>EnvironmentDark</li>
@@ -210,7 +234,7 @@
 				  <li>
                     <original>SleptInBarracks</original>
                     <replacer>LotROG_SleptInBarracks</replacer> 
-                  </li>                
+                  </li>
 				  <li>
                     <original>NeedBeauty</original>
                     <replacer>LotROG_NeedBeauty</replacer> 
@@ -220,73 +244,74 @@
         </alienRace>
         <!--<uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>-->
         <statBases>
-            <MarketValue>1500</MarketValue>
-            <MoveSpeed>5</MoveSpeed>
+            <MarketValue>500</MarketValue>
+            <MoveSpeed>4.5</MoveSpeed>
             <Flammability>1.0</Flammability>
             <ComfyTemperatureMin>-60</ComfyTemperatureMin>
             <ComfyTemperatureMax>60</ComfyTemperatureMax>
-            <LeatherAmount>25</LeatherAmount>
-            <ResearchSpeed>0.10</ResearchSpeed>
+            <LeatherAmount>20</LeatherAmount>
+            <ResearchSpeed>1.2</ResearchSpeed>
         </statBases>
-		<tools>
-			<li>
-				<label>left fist</label>
-				<capacities>
-				  <li>Blunt</li>
-				</capacities>
-				<power>8</power>
-				<cooldownTime>1.6</cooldownTime>
-				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
-				<surpriseAttack>
-				  <extraMeleeDamages>
-					<li>
-					  <def>Stun</def>
-					  <amount>22</amount>
-					</li>
-				  </extraMeleeDamages>
-				</surpriseAttack>
-			</li>
-			<li>
-				<label>right fist</label>
-				<capacities>
-				  <li>Blunt</li>
-				</capacities>
-				<power>8</power>
-				<cooldownTime>1.6</cooldownTime>
-				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
-				<surpriseAttack>
-				  <extraMeleeDamages>
-					<li>
-					  <def>Stun</def>
-					  <amount>22</amount>
-					</li>
-				  </extraMeleeDamages>
-				</surpriseAttack>
-			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-				  <li>Blunt</li>
-				</capacities>
-				<power>6</power>
-				<cooldownTime>1.8</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
+        <tools>
+		  <li>
+			<label>left fist</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>1.6</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>22</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<label>right fist</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>1.6</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>22</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>3</power>
+			<cooldownTime>1.8</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<chanceFactor>0.2</chanceFactor>
+		  </li>
 		</tools>
         <race>
             <thinkTreeMain>Humanlike</thinkTreeMain>
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
-            <lifeExpectancy>25</lifeExpectancy>
-			<leatherDef>LotROG_Leather_Orc</leatherDef>
+            <lifeExpectancy>80</lifeExpectancy>
             <nameCategory>HumanStandard</nameCategory>
             <body>Human</body>
-            <baseBodySize>1</baseBodySize>
-            <baseHealthScale>1</baseHealthScale>
+            <baseBodySize>0.6</baseBodySize>
+            <baseHealthScale>0.6</baseHealthScale>
             <foodType>CarnivoreAnimal, AnimalProduct, Meat, Kibble, Processed, Corpse</foodType>
-            <gestationPeriodDays>25</gestationPeriodDays>
+			<leatherDef>LotROG_Leather_Goblin</leatherDef>
+            <nuzzleMtbHours>3</nuzzleMtbHours>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
 				  <li>(0.5, 0)</li>
@@ -330,11 +355,9 @@
                 <points>
                     <li>(3,0)</li>
                     <li>(5,100)</li>
-                    <li>(10,100)</li>
-                    <li>(15,50)</li>
-                    <li>(20,25)</li>
-                    <li>(25,10)</li>
-                    <li>(30,0)</li>
+                    <li>(10,50)</li>
+                    <li>(15,5)</li>
+                    <li>(20,0)</li>
                 </points>
             </ageGenerationCurve>
             <hediffGiverSets>

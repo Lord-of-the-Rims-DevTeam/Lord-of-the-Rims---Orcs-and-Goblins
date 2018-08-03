@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>LotROG_Leather_Goblin</defName>
+    <label>golbinlike leather</label>
+    <description>Tanned, dried, scraped goblin skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+    <graphicData>
+      <color>(60,145,60)</color>
+      <colorTwo>(60,145,60)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.6</MarketValue>
+      <StuffPower_Armor_Sharp>0.55</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>13</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>13</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(235,235,235)</color>
+      <commonality>0.0015</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+</Defs>

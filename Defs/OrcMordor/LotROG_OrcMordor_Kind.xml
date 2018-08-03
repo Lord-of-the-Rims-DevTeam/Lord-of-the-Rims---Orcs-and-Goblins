@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="OrcMordorVillager">
+    <defName>LotROG_OrcMordor</defName>
+    <label>mordor orc</label>
+    <race>Alien_OrcMordor</race>
+    <combatPower>25</combatPower>
+    <baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+    <backstoryCategory>Tribal</backstoryCategory>
+    <defaultFactionType>LotROG_OrcMordorFaction</defaultFactionType>
+    <backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>900</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <weaponMoney>
+      <min>3000</min>
+      <max>5000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>5000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OrcMordorVillager">
+    <defName>LotROG_OrcMordor_Trader</defName>
+    <label>mordor orc trader</label>
+	<trader>true</trader>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OrcMordorVillager" Name="OrcMordorFighter">
+    <defName>LotROG_OrcMordor_Fighter</defName>
+    <label>mordor orc fighter</label>
+    <combatPower>50</combatPower>
+    <isFighter>true</isFighter>
+    <apparelMoney>
+      <min>300</min>
+      <max>900</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <weaponMoney>
+      <min>3000</min>
+      <max>5000</max>
+    </weaponMoney>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OrcMordorFighter" Name="OrcMordorRanged">
+    <defName>LotROG_OrcMordor_Ranged</defName>
+    <label>mordor orc archer</label>
+    <combatPower>60</combatPower>
+    <weaponTags Inherit="False">
+      <li>NeolithicRangedBasic</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OrcMordorFighter" Name="OrcMordorChief">
+    <defName>LotROG_OrcMordor_Chief</defName>
+    <label>mordor orc chief</label>
+    <combatPower>60</combatPower>
+    <weaponTags Inherit="False">
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+
+</Defs>

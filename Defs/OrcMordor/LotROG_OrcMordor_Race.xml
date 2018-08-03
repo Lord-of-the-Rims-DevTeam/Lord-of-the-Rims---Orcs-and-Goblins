@@ -1,10 +1,65 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
+  <AlienRace.RaceSettings>
+    <defName>LotROG_OrcMordorSettings</defName>
+	<pawnKindSettings>
+	<startingColonists>
+		<li>
+			<pawnKindEntries>
+				<li>
+					<kindDefs>
+						<li>LotROG_OrcMordorColonist</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+			</pawnKindEntries>
+			<factionDefs>
+				<li>PlayerColony</li> 
+			</factionDefs>
+		</li>
+	</startingColonists>
+	<alienslavekinds>
+		<li>
+			<kindDefs>
+				<li>LotROG_OrcMordor</li>
+			</kindDefs>
+			<chance>5.0</chance>
+		</li>
+	</alienslavekinds>
+	<alienrefugeekinds>
+		<li>
+			<kindDefs>
+				<li>LotROG_OrcMordor</li>
+			</kindDefs>
+			<chance>10.0</chance>
+		</li>
+	</alienrefugeekinds>
+	<alienwandererkinds>
+		<li>
+			<pawnKindEntries>
+				<li>
+					<kindDefs>
+						<li>LotROG_OrcMordor</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+			</pawnKindEntries>
+			<factionDefs>
+				<li>PlayerColony</li> 
+			</factionDefs>
+		</li>
+	</alienwandererkinds>
+	</pawnKindSettings>
+  </AlienRace.RaceSettings>
+
+
+
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-        <defName>Alien_GundabadOrc</defName>
-        <label>gundabad orc</label>
-        <description>gundabad Orc description</description>
+        <defName>Alien_OrcMordor</defName>
+        <label>mordor orc</label>
+        <description>Mordor Orc description</description>
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.9</maleGenderProbability>    
@@ -48,47 +103,44 @@
 					<useGenderedHeads>false</useGenderedHeads>
                     <bodyAddons>
 						<li>
-						  <path>GundabadOrc/Ears/gundabadEar</path>
+						  <path>MordorOrc/Ears/mordorEar</path>
 						  <bodyPart>Head</bodyPart>
 						  <inFrontOfBody>true</inFrontOfBody>
 						  <layerOffset>0</layerOffset>
 						  <offsets>
-							  <front>
+							  <south>
 								<bodyTypes>
 									<Male>(-0.42,0.46)</Male>
 									<Female>(-0.42,0.46)</Female>
 									<Fat>(-0.42,0.46)</Fat>
 									<Thin>(-0.42,0.46)</Thin>
-									<Hulk>(-0.42,0.46)</Hulk>
 								</bodyTypes>
 								<crownTypes>
-									<Average_Normal>(0,0.1)</Average_Normal>
+									<Average_Normal>(0,0.00)</Average_Normal>
 								</crownTypes>
-							  </front>
-							  <back>
+							  </south>
+							  <north>
 								<bodyTypes>
-									<Male>(0,0.82)</Male>
-									<Female>(0,0.82)</Female>
-									<Fat>(0,0.82)</Fat>
-									<Thin>(0,0.82)</Thin>
-									<Hulk>(0,0.82)</Hulk>
+									<Male>(0,0.79)</Male>
+									<Female>(0,0.79)</Female>
+									<Fat>(0,0.79)</Fat>
+									<Thin>(0,0.79)</Thin>
 								</bodyTypes>
 								<crownTypes>
-									<Average_Normal>(0,0.1)</Average_Normal>
+									<Average_Normal>(0,0.0)</Average_Normal>
 								</crownTypes>
-							  </back>
-							  <side>
+							  </north>
+							  <east>
 								<bodyTypes>
-									<Male>(-0.5,0.5)</Male>
-									<Female>(-0.5,0.5)</Female>
-									<Fat>(-0.5,0.5)</Fat>
-									<Thin>(-0.5,0.5)</Thin>
-									<Hulk>(-0.5,0.5)</Hulk>
+									<Male>(-0.5,0.45)</Male>
+									<Female>(-0.5,0.45)</Female>
+									<Fat>(-0.5,0.45)</Fat>
+									<Thin>(-0.5,0.45)</Thin>
 								</bodyTypes>
 								<crownTypes>
-									<Average_Normal>(0,0.1)</Average_Normal>
+									<Average_Normal>(0,0.0)</Average_Normal>
 								</crownTypes>
-							  </side>
+							  </east>
 						  </offsets>
 						  <useSkinColor>true</useSkinColor>
 						  <hiddenUnderApparelFor>
@@ -152,73 +204,51 @@
                     <customDrawSize>(0.9, 0.9)</customDrawSize>
 					<customHeadDrawSize>(0.9, 0.9)</customHeadDrawSize>
                     <customPortraitDrawSize>(0.9, 0.9)</customPortraitDrawSize>
-					<headOffset>(0.0, -0.0)</headOffset> 
+					<headOffset>(0.0, -0.07)</headOffset> 
                 </alienPartGenerator>
 		    </generalSettings>
 		
             <graphicPaths>
                 <li>
-                    <head>GundabadOrc/Heads/</head>
+                    <head>MordorOrc/Heads/</head>
                 </li>
             </graphicPaths>
 		
             <hairSettings>
                 <hasHair>true</hasHair>
                 <getsGreyAt>50</getsGreyAt>
+				<hairTags>
+				  <li>LotROG_OrcGoblin</li>
+				</hairTags>
             </hairSettings>
-            <pawnKindSettings>
-            <startingColonists>
-                <li>
-                    <pawnKindEntries>
-                        <li>
-                            <kindDefs>
-                                <li>GundabadOrc</li>
-                            </kindDefs>
-                            <chance>10.0</chance>
-                        </li>
-                    </pawnKindEntries>
-                    <factionDefs>
-                        <li>PlayerColony</li> 
-                    </factionDefs>
-                </li>
-            </startingColonists>
-            <alienslavekinds>
-                <li>
-                    <kindDefs>
-                        <li>GundabadOrc</li>
-                    </kindDefs>
-                    <chance>5.0</chance>
-                </li>
-            </alienslavekinds>
-            <alienrefugeekinds>
-                <li>
-                    <kindDefs>
-                        <li>GundabadOrc</li>
-                    </kindDefs>
-                    <chance>10.0</chance>
-                </li>
-            </alienrefugeekinds>
-            <alienwandererkinds>
-                <li>
-                    <pawnKindEntries>
-                        <li>
-                            <kindDefs>
-                                <li>GundabadOrc</li>
-                            </kindDefs>
-                            <chance>10.0</chance>
-                        </li>
-                    </pawnKindEntries>
-                    <factionDefs>
-                        <li>PlayerColony</li> 
-                    </factionDefs>
-                </li>
-            </alienwandererkinds>
-            </pawnKindSettings>
+
             <thoughtSettings>
                 <cannotReceiveThoughts>
                 <li>EnvironmentDark</li>
                 <li>CabinFever</li>
                 </cannotReceiveThoughts>
+				<replacerList>
+                  <li>
+                    <original>AteInImpressiveDiningRoom</original>
+                    <replacer>LotROG_AteInImpressiveDiningRoom</replacer> 
+                  </li>
+                  <li>
+                    <original>JoyActivityInImpressiveRecRoom</original>
+                    <replacer>LotROG_JoyActivityInImpressiveRecRoom</replacer> 
+                  </li>                
+				  <li>
+                    <original>SleptInBedroom</original>
+                    <replacer>LotROG_SleptInBedroom</replacer> 
+                  </li>                
+				  <li>
+                    <original>SleptInBarracks</original>
+                    <replacer>LotROG_SleptInBarracks</replacer> 
+                  </li>     
+				  <li>
+                    <original>NeedBeauty</original>
+                    <replacer>LotROG_NeedBeauty</replacer> 
+                  </li>
+                </replacerList>
             </thoughtSettings>
         </alienRace>
         <!--<uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>-->
@@ -274,7 +304,7 @@
 			<power>4</power>
 			<cooldownTime>1.8</cooldownTime>
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-			<commonality>0.2</commonality>
+			<chanceFactor>0.2</chanceFactor>
 		  </li>
 		</tools>
         <race>
@@ -282,11 +312,8 @@
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
-            <lifeExpectancy>20</lifeExpectancy>
-            <leatherColor>(235,235,235)</leatherColor>
-            <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
-            <leatherInsulation>0.5</leatherInsulation>
-            <leatherMarketValueFactor>1</leatherMarketValueFactor>
+            <lifeExpectancy>80</lifeExpectancy>
+			<leatherDef>LotROG_Leather_Goblin</leatherDef>
             <nameCategory>HumanStandard</nameCategory>
             <body>Human</body>
             <baseBodySize>0.8</baseBodySize>
@@ -348,7 +375,7 @@
         </race>
         <recipes>
 			  <li>InstallPowerClaw</li>
-			  <li>InstallScytherBlade</li>
+			  
 			  <li>InstallBionicEye</li>
 			  <li>InstallBionicArm</li>
 			  <li>InstallBionicLeg</li>

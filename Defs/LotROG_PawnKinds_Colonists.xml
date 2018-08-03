@@ -2,19 +2,33 @@
 <Defs>
 
   <PawnKindDef Abstract="True" Name="LotROG_BasePlayerPawnKind">
-    <race>Human</race>
     <combatPower>30</combatPower>
     <baseRecruitDifficulty>0.60</baseRecruitDifficulty>
     <isFighter>false</isFighter>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
-  
-
 
   <PawnKindDef ParentName="LotROG_BasePlayerPawnKind">
-    <defName>LotROG_MordorOrcColonist</defName>
-	<race>Alien_MordorOrc</race>
+    <defName>LotROG_OrcGundabadColonist</defName>
+	<race>Alien_OrcGundabad</race>
+    <label>colonist (gundabad orc)</label>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <backstoryCategory>Tribal</backstoryCategory>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2400</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="LotROG_BasePlayerPawnKind">
+    <defName>LotROG_OrcMordorColonist</defName>
+	<race>Alien_OrcMordor</race>
     <label>colonist (mordor orc)</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
     <backstoryCategory>Tribal</backstoryCategory>
@@ -31,8 +45,8 @@
 
   
   <PawnKindDef ParentName="LotROG_BasePlayerPawnKind">
-    <defName>LotROG_MoriaGoblinColonist</defName>
-	<race>Alien_MoriaGoblin</race>
+    <defName>LotROG_GoblinMoriaColonist</defName>
+	<race>Alien_GoblinMoria</race>
     <label>colonist (moria goblin)</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
     <backstoryCategory>Tribal</backstoryCategory>
@@ -49,8 +63,8 @@
   
   
   <PawnKindDef ParentName="LotROG_BasePlayerPawnKind">
-    <defName>LotROG_MistyMountainGoblinColonist</defName>
-	<race>Alien_MistyMountainGoblin</race>
+    <defName>LotROG_GoblinMistyMountainsColonist</defName>
+	<race>Alien_GoblinMistyMountains</race>
     <label>colonist (misty mountain goblin)</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
     <backstoryCategory>Tribal</backstoryCategory>
