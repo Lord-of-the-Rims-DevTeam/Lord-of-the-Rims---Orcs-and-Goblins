@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>LotROG_Leather_Goblin</defName>
+    <label>goblin leather</label>
+    <description>Tanned, dried, scraped goblin skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+    <graphicData>
+      <color>(235,235,235)</color>
+      <colorTwo>(235,235,235)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.6</MarketValue>
+      <StuffPower_Armor_Sharp>0.35</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>13</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>13</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(235,235,235)</color>
+      <commonality>0.0015</commonality>
+    </stuffProps>
+  </ThingDef>
+
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
         <defName>Alien_MistyMountainGoblin</defName>
         <label>misty mountain goblin</label>
@@ -289,7 +310,7 @@
 			<power>3</power>
 			<cooldownTime>1.8</cooldownTime>
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-			<commonality>0.2</commonality>
+			<chanceFactor>0.2</chanceFactor>
 		  </li>
 		</tools>
         <race>
@@ -298,15 +319,12 @@
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
             <lifeExpectancy>15</lifeExpectancy>
-            <leatherColor>(235,235,235)</leatherColor>
-            <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
-            <leatherInsulation>0.5</leatherInsulation>
-            <leatherMarketValueFactor>1</leatherMarketValueFactor>
             <nameCategory>HumanStandard</nameCategory>
             <body>Human</body>
             <baseBodySize>0.6</baseBodySize>
             <baseHealthScale>0.6</baseHealthScale>
             <foodType>CarnivoreAnimal, AnimalProduct, Meat, Kibble, Processed, Corpse</foodType>
+			<leatherDef>LotROG_Leather_Goblin</leatherDef>
             <nuzzleMtbHours>3</nuzzleMtbHours>
 			<gestationPeriodDays>15</gestationPeriodDays>
 			<litterSizeCurve>
@@ -363,7 +381,7 @@
         </race>
         <recipes>
 			  <li>InstallPowerClaw</li>
-			  <li>InstallScytherBlade</li>
+			  
 			  <li>InstallBionicEye</li>
 			  <li>InstallBionicArm</li>
 			  <li>InstallBionicLeg</li>

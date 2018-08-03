@@ -5,7 +5,7 @@
     <defName>LotROG_WallOrc</defName>
     <label>orc wall</label>
     <thingClass>Building</thingClass>
-    <category>Building</category>
+    <category>Building</category><thingCategories><li>Buildings</li></thingCategories>
     <description>This irregularly constructed wall with rocky foundations provides both defense and shelter.</description>
     <graphicData>
       <texPath>Things/OrcWall/aPurpleApple_OrcWall</texPath>
@@ -27,9 +27,6 @@
         <edgeRight>Damage/Edge</edgeRight>
       </damageData>
     </graphicData>
-    <blueprintGraphicData>
-      <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-    </blueprintGraphicData>
     <uiIconPath>Things/OrcWall/aPurpleApple_OrcWall_MenuIcon</uiIconPath>
     <statBases>
       <MaxHitPoints>430</MaxHitPoints>
@@ -62,6 +59,9 @@
       <li>Stony</li>
     </stuffCategories>
     <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
       <isInert>true</isInert>
     </building>
     <damageMultipliers>

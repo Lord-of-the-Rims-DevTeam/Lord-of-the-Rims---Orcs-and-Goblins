@@ -271,7 +271,7 @@
 				<power>6</power>
 				<cooldownTime>1.8</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<commonality>0.2</commonality>
+				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
         <race>
@@ -280,10 +280,7 @@
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
             <lifeExpectancy>25</lifeExpectancy>
-            <leatherColor>(235,235,235)</leatherColor>
-            <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
-            <leatherInsulation>0.7</leatherInsulation>
-            <leatherMarketValueFactor>2</leatherMarketValueFactor>
+			<leatherDef>LotROG_Leather_Orc</leatherDef>
             <nameCategory>HumanStandard</nameCategory>
             <body>Human</body>
             <baseBodySize>1</baseBodySize>
@@ -346,7 +343,7 @@
         </race>
         <recipes>
 			  <li>InstallPowerClaw</li>
-			  <li>InstallScytherBlade</li>
+			  
 			  <li>InstallBionicEye</li>
 			  <li>InstallBionicArm</li>
 			  <li>InstallBionicLeg</li>

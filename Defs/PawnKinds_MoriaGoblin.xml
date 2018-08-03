@@ -22,7 +22,7 @@
     <apparelTags>
       <li>Tribal</li>
     </apparelTags>
-    <apparelAllowHeadwearChance>0.4</apparelAllowHeadwearChance>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
     <weaponMoney>
       <min>3000</min>
       <max>5000</max>

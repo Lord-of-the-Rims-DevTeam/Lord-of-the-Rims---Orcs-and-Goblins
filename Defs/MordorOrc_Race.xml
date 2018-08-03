@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>LotROG_Leather_Orc</defName>
+    <label>orc leather</label>
+    <description>Tanned, dried, scraped orc skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+    <graphicData>
+      <color>(235,235,235)</color>
+      <colorTwo>(235,235,235)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.6</MarketValue>
+      <StuffPower_Armor_Sharp>0.55</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>13</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>13</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(235,235,235)</color>
+      <commonality>0.0015</commonality>
+    </stuffProps>
+  </ThingDef>
+
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
         <defName>Alien_MordorOrc</defName>
         <label>mordor orc</label>
@@ -296,7 +317,7 @@
 			<power>4</power>
 			<cooldownTime>1.8</cooldownTime>
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-			<commonality>0.2</commonality>
+			<chanceFactor>0.2</chanceFactor>
 		  </li>
 		</tools>
         <race>
@@ -305,10 +326,7 @@
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
             <lifeExpectancy>20</lifeExpectancy>
-            <leatherColor>(235,235,235)</leatherColor>
-            <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
-            <leatherInsulation>0.5</leatherInsulation>
-            <leatherMarketValueFactor>1</leatherMarketValueFactor>
+			<leatherDef>LotROG_Leather_Orc</leatherDef>
             <nameCategory>HumanStandard</nameCategory>
             <body>Human</body>
             <baseBodySize>0.8</baseBodySize>
@@ -370,7 +388,7 @@
         </race>
         <recipes>
 			  <li>InstallPowerClaw</li>
-			  <li>InstallScytherBlade</li>
+			  
 			  <li>InstallBionicEye</li>
 			  <li>InstallBionicArm</li>
 			  <li>InstallBionicLeg</li>
