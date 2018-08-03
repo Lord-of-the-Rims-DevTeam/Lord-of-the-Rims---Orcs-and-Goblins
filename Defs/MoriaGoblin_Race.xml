@@ -55,10 +55,10 @@
 			  <offsets>
 				  <front>
 					<bodyTypes>
-						<Male>(-0.42,0.46)</Male>
-						<Female>(-0.42,0.46)</Female>
-						<Fat>(-0.42,0.46)</Fat>
-						<Thin>(-0.42,0.46)</Thin>
+						<Male>(-0.42,0.36)</Male>
+						<Female>(-0.42,0.36)</Female>
+						<Fat>(-0.42,0.36)</Fat>
+						<Thin>(-0.42,0.36)</Thin>
 					</bodyTypes>
 					<crownTypes>
 						<Average_Normal>(0,0.00)</Average_Normal>
@@ -66,10 +66,10 @@
 				  </front>
 				  <back>
 					<bodyTypes>
-						<Male>(0,0.79)</Male>
-						<Female>(0,0.79)</Female>
-						<Fat>(0,0.79)</Fat>
-						<Thin>(0,0.79)</Thin>
+						<Male>(0,0.69)</Male>
+						<Female>(0,0.69)</Female>
+						<Fat>(0,0.69)</Fat>
+						<Thin>(0,0.69)</Thin>
 					</bodyTypes>
 					<crownTypes>
 						<Average_Normal>(0,0.0)</Average_Normal>
@@ -77,10 +77,10 @@
 				  </back>
 				  <side>
 					<bodyTypes>
-						<Male>(-0.5,0.45)</Male>
-						<Female>(-0.5,0.45)</Female>
-						<Fat>(-0.5,0.45)</Fat>
-						<Thin>(-0.5,0.45)</Thin>
+						<Male>(-0.5,0.35)</Male>
+						<Female>(-0.5,0.35)</Female>
+						<Fat>(-0.5,0.35)</Fat>
+						<Thin>(-0.5,0.35)</Thin>
 					</bodyTypes>
 					<crownTypes>
 						<Average_Normal>(0,0.0)</Average_Normal>
@@ -142,10 +142,10 @@
                         </li>
                         </options>
                     </alienskincolorgen>
-                    <customDrawSize>(0.82, 0.82)</customDrawSize>
-					<customHeadDrawSize>(0.8, 0.8)</customHeadDrawSize>
-                    <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize>
-					<headOffset>(0, -0.1)</headOffset>   
+                    <customDrawSize>(0.74, 0.74)</customDrawSize>
+					<customHeadDrawSize>(0.74, 0.74)</customHeadDrawSize>
+                    <customPortraitDrawSize>(0.74, 0.74)</customPortraitDrawSize>
+					<headOffset>(0, -0.2)</headOffset>   
                 </alienPartGenerator>
 		    </generalSettings>
 		
@@ -181,7 +181,7 @@
             <alienslavekinds>
                 <li>
                     <kindDefs>
-                        <li>MoriaGoblin</li>
+                        <li>LotROG_MoriaGoblin</li>
                     </kindDefs>
                     <chance>5.0</chance>
                 </li>
@@ -189,7 +189,7 @@
             <alienrefugeekinds>
                 <li>
                     <kindDefs>
-                        <li>MoriaGoblin</li>
+                        <li>LotROG_MoriaGoblin</li>
                     </kindDefs>
                     <chance>10.0</chance>
                 </li>
@@ -199,7 +199,7 @@
                     <pawnKindEntries>
                         <li>
                             <kindDefs>
-                                <li>MistyMountainGoblin</li>
+                                <li>LotROG_MistyMountainGoblin</li>
                             </kindDefs>
                             <chance>10.0</chance>
                         </li>
