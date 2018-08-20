@@ -3,14 +3,14 @@
 
 
   <AlienRace.RaceSettings>
-    <defName>LotROG_UrukHaiSettings</defName>
+    <defName>LotROG_OlogHaiSettings</defName>
 	<pawnKindSettings>
 	<startingColonists>
 		<li>
 			<pawnKindEntries>
 				<li>
 					<kindDefs>
-						<li>LotROG_UrukHaiColonist</li>
+						<li>LotROG_OlogHaiColonist</li>
 					</kindDefs>
 					<chance>10.0</chance>
 				</li>
@@ -23,7 +23,7 @@
 	<alienslavekinds>
 		<li>
 			<kindDefs>
-				<li>UrukHai</li>
+				<li>OlogHai</li>
 			</kindDefs>
 			<chance>5.0</chance>
 		</li>
@@ -31,7 +31,7 @@
 	<alienrefugeekinds>
 		<li>
 			<kindDefs>
-				<li>UrukHai</li>
+				<li>OlogHai</li>
 			</kindDefs>
 			<chance>10.0</chance>
 		</li>
@@ -41,7 +41,7 @@
 			<pawnKindEntries>
 				<li>
 					<kindDefs>
-						<li>UrukHai</li>
+						<li>OlogHai</li>
 					</kindDefs>
 					<chance>10.0</chance>
 				</li>
@@ -56,9 +56,9 @@
   
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-        <defName>Alien_UrukHai</defName>
-        <label>uruk hai</label>
-        <description>Alien_UrukHai description</description>
+        <defName>Alien_OlogHai</defName>
+        <label>olog hai</label>
+        <description>OlogHai description</description>
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.9</maleGenderProbability>    
@@ -100,57 +100,6 @@
                         <li>Hulk</li>
                     </alienbodytypes>
 					<useGenderedHeads>false</useGenderedHeads>
-                   <bodyAddons>
-						<li>
-						  <path>UrukHai/Ears/urukEar</path>
-						  <bodyPart>Head</bodyPart>
-						  <inFrontOfBody>true</inFrontOfBody>
-						  <layerOffset>0</layerOffset>
-						  <offsets>
-							  <south>
-								<bodyTypes>
-									<Male>(-0.42,0.46)</Male>
-									<Female>(-0.42,0.46)</Female>
-									<Fat>(-0.42,0.46)</Fat>
-									<Thin>(-0.42,0.46)</Thin>
-									<Hulk>(-0.42,0.46)</Hulk>
-								</bodyTypes>
-								<crownTypes>
-									<Average_Normal>(0,0.1)</Average_Normal>
-								</crownTypes>
-							  </south>
-							  <north>
-								<bodyTypes>
-									<Male>(0,0.82)</Male>
-									<Female>(0,0.82)</Female>
-									<Fat>(0,0.82)</Fat>
-									<Thin>(0,0.82)</Thin>
-									<Hulk>(0,0.82)</Hulk>
-								</bodyTypes>
-								<crownTypes>
-									<Average_Normal>(0,0.1)</Average_Normal>
-								</crownTypes>
-							  </north>
-							  <east>
-								<bodyTypes>
-									<Male>(-0.5,0.5)</Male>
-									<Female>(-0.5,0.5)</Female>
-									<Fat>(-0.5,0.5)</Fat>
-									<Thin>(-0.5,0.5)</Thin>
-									<Hulk>(-0.5,0.5)</Hulk>
-								</bodyTypes>
-								<crownTypes>
-									<Average_Normal>(0,0.1)</Average_Normal>
-								</crownTypes>
-							  </east>
-						  </offsets>
-						  <useSkinColor>true</useSkinColor>
-						  <hiddenUnderApparelFor>
-							<li>FullHead</li>
-						  </hiddenUnderApparelFor>
-						</li>
-					  </bodyAddons>
-
                     <alienskincolorgen Class="ColorGenerator_Options">
                         <options>
                         <li>
@@ -175,25 +124,23 @@
                         </li>
                         </options>
                     </alienskincolorgen>
-                    <customDrawSize>(1.0, 1.0)</customDrawSize>
-					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+                    <customDrawSize>(1.725, 1.725)</customDrawSize>
+					<customHeadDrawSize>(0.7, 0.7)</customHeadDrawSize>
                     <customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
-					<headOffset>(0.0, -0.0)</headOffset>   
+					<headOffset>(0.0, 0.2)</headOffset>   
                 </alienPartGenerator>
 		    </generalSettings>
 		
             <graphicPaths>
                 <li>
-                    <head>UrukHai/Heads/</head>
+                    <head>OlogHai/Heads/</head>
                 </li>
             </graphicPaths>
 		
             <hairSettings>
-                <hasHair>true</hasHair>
+                <hasHair>false</hasHair>
                 <getsGreyAt>20</getsGreyAt>
-				<hairTags>
-				  <li>LotROG_OrcGoblin</li>
-				</hairTags>
+				<hairTags />
             </hairSettings>
 
             <thoughtSettings>

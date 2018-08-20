@@ -14,7 +14,7 @@
 	<race>Alien_OrcGundabad</race>
     <label>colonist (gundabad orc)</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
-    <backstoryCategory>Tribal</backstoryCategory>
+    <backstoryCategories><li>Tribal</li></backstoryCategories>
     <chemicalAddictionChance>0.0</chemicalAddictionChance>
     <apparelTags>
       <li>Tribal</li>
@@ -31,7 +31,7 @@
 	<race>Alien_OrcMordor</race>
     <label>colonist (mordor orc)</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
-    <backstoryCategory>Tribal</backstoryCategory>
+    <backstoryCategories><li>Tribal</li></backstoryCategories>
     <chemicalAddictionChance>0.0</chemicalAddictionChance>
     <apparelTags>
       <li>Tribal</li>
@@ -49,7 +49,7 @@
 	<race>Alien_GoblinMoria</race>
     <label>colonist (moria goblin)</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
-    <backstoryCategory>Tribal</backstoryCategory>
+    <backstoryCategories><li>Tribal</li></backstoryCategories>
     <chemicalAddictionChance>0.0</chemicalAddictionChance>
     <apparelTags>
       <li>Tribal</li>
@@ -67,7 +67,7 @@
 	<race>Alien_GoblinMistyMountains</race>
     <label>colonist (misty mountain goblin)</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
-    <backstoryCategory>Tribal</backstoryCategory>
+    <backstoryCategories><li>Tribal</li></backstoryCategories>
     <chemicalAddictionChance>0.0</chemicalAddictionChance>
     <apparelTags>
       <li>Tribal</li>
@@ -84,7 +84,7 @@
 	<race>Alien_UrukHai</race>
     <label>colonist (uruk-hai)</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
-    <backstoryCategory>Tribal</backstoryCategory>
+    <backstoryCategories><li>Tribal</li></backstoryCategories>
     <chemicalAddictionChance>0.0</chemicalAddictionChance>
     <apparelTags>
       <li>Tribal</li>

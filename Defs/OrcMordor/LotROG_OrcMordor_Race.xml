@@ -63,7 +63,7 @@
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.9</maleGenderProbability>    
-				<pawnsSpecificBackstories>true</pawnsSpecificBackstories>
+				<allowHumanBios>false</allowHumanBios>
 				<forcedRaceTraitEntries>
 					<li>
                         <defName>Bloodlust</defName>

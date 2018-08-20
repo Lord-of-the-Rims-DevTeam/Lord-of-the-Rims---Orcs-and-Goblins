@@ -32,7 +32,7 @@
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<techLevel>Neolithic</techLevel>
-		<backstoryCategory>Raider</backstoryCategory>
+		<backstoryCategories><li>Raider</li></backstoryCategories>
 		<geneticVariance>0.8</geneticVariance>
 		<hairTags>
 			<li>LotROG_OrcGoblin</li>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <PawnKindDef Name="OrcGundabadVillager">
-    <defName>LotROG_OrcGundabad</defName>
-    <label>gundabad orc</label>
-    <race>Alien_OrcGundabad</race>
+  <PawnKindDef Name="OlogHaiVillager">
+    <defName>LotROG_OlogHai</defName>
+    <label>OlogHai</label>
+    <race>Alien_OlogHai</race>
     <combatPower>25</combatPower>
     <baseRecruitDifficulty>0.80</baseRecruitDifficulty>
     <backstoryCategories><li>Tribal</li></backstoryCategories>
-    <defaultFactionType>LotROG_OrcGundabadFaction</defaultFactionType>
+    <defaultFactionType>LotROG_OrcMordorFaction</defaultFactionType>
     <backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
     <isFighter>false</isFighter>
     <gearHealthRange>
@@ -59,15 +59,15 @@
     </inventoryOptions>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="OrcGundabadVillager">
-    <defName>LotROG_OrcGundabad_Trader</defName>
-    <label>gundabad orc trader</label>
+  <PawnKindDef ParentName="OlogHaiVillager">
+    <defName>LotROG_OlogHai_Trader</defName>
+    <label>OlogHai trader</label>
 	<trader>true</trader>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="OrcGundabadVillager" Name="OrcGundabadFighter">
-    <defName>LotROG_OrcGundabad_Fighter</defName>
-    <label>gundabad orc fighter</label>
+  <PawnKindDef ParentName="OlogHaiVillager" Name="OlogHaiFighter">
+    <defName>LotROG_OlogHai_Fighter</defName>
+    <label>OlogHai fighter</label>
     <combatPower>50</combatPower>
     <baseRecruitDifficulty>0.80</baseRecruitDifficulty>
     <isFighter>true</isFighter>
@@ -110,18 +110,18 @@
     </inventoryOptions>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="OrcGundabadFighter" Name="OrcGundabadRanged">
-    <defName>LotROG_OrcGundabad_Ranged</defName>
-    <label>gundabad orc archer</label>
+  <PawnKindDef ParentName="OlogHaiFighter" Name="OlogHaiRanged">
+    <defName>LotROG_OlogHai_Ranged</defName>
+    <label>OlogHai archer</label>
     <combatPower>60</combatPower>
     <weaponTags Inherit="False">
       <li>NeolithicRangedBasic</li>
     </weaponTags>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="OrcGundabadFighter" Name="OrcGundabadChief">
-    <defName>LotROG_OrcGundabad_Chief</defName>
-    <label>gundabad orc chief</label>
+  <PawnKindDef ParentName="OlogHaiFighter" Name="OlogHaiChief">
+    <defName>LotROG_OlogHai_Chief</defName>
+    <label>OlogHai chief</label>
     <combatPower>60</combatPower>
     <weaponTags Inherit="False">
       <li>NeolithicRangedHeavy</li>

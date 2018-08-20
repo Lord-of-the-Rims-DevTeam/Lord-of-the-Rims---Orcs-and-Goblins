@@ -7,7 +7,7 @@
     <race>Alien_GoblinMoria</race>
     <combatPower>25</combatPower>
     <baseRecruitDifficulty>0.80</baseRecruitDifficulty>
-    <backstoryCategory>Tribal</backstoryCategory>
+    <backstoryCategories><li>Tribal</li></backstoryCategories>
     <defaultFactionType>LotROG_GoblinMoriaFaction</defaultFactionType>
     <backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
     <isFighter>false</isFighter>
@@ -21,6 +21,7 @@
     </apparelMoney>
     <apparelTags>
       <li>Tribal</li>
+	  <li>LotROG_Goblinlike</li>
     </apparelTags>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
     <weaponMoney>
