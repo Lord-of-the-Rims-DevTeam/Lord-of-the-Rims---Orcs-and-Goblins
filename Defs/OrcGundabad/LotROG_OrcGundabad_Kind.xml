@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="OrcGundabadVillager">
+    <defName>LotROG_OrcGundabad</defName>
+    <label>gundabad orc</label>
+    <race>Alien_OrcGundabad</race>
+    <combatPower>25</combatPower>
+    <baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+    <backstoryCategories><li>Tribal</li></backstoryCategories>
+    <defaultFactionType>LotROG_OrcGundabadFaction</defaultFactionType>
+    <backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>900</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+	  <li>LotROG_Goblinlike</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <weaponMoney>
+      <min>3000</min>
+      <max>5000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>5000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OrcGundabadVillager">
+    <defName>LotROG_OrcGundabad_Trader</defName>
+    <label>gundabad orc trader</label>
+	<trader>true</trader>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OrcGundabadVillager" Name="OrcGundabadFighter">
+    <defName>LotROG_OrcGundabad_Fighter</defName>
+    <label>gundabad orc fighter</label>
+    <combatPower>50</combatPower>
+    <baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+    <isFighter>true</isFighter>
+    <apparelMoney>
+      <min>300</min>
+      <max>900</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <weaponMoney>
+      <min>3000</min>
+      <max>5000</max>
+    </weaponMoney>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OrcGundabadFighter" Name="OrcGundabadRanged">
+    <defName>LotROG_OrcGundabad_Ranged</defName>
+    <label>gundabad orc archer</label>
+    <combatPower>60</combatPower>
+    <weaponTags Inherit="False">
+      <li>NeolithicRangedBasic</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OrcGundabadFighter" Name="OrcGundabadChief">
+    <defName>LotROG_OrcGundabad_Chief</defName>
+    <label>gundabad orc chief</label>
+    <combatPower>60</combatPower>
+    <weaponTags Inherit="False">
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+
+</Defs>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="HumanFactionBase" Name="OrcMordorFactionBase">
+    <defName>LotROG_OrcMordorFaction</defName>
+    <label>Servants of the Dark Lord</label>
+    <description>.</description>
+    <!--
+	<colorSpectrum>
+      <li>(0.00, 0.30, 0.70)</li>
+      <li>(0.00, 0.40, 1.00)</li>
+    </colorSpectrum>
+	-->
+    <startingGoodwill>
+      <min>-20</min>
+      <max>-20</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-80</max>
+    </naturalColonyGoodwill>
+    <pawnSingular>orc</pawnSingular>
+    <pawnsPlural>orcs</pawnsPlural>
+    <listOrderPriority>30</listOrderPriority>
+    <settlementGenerationWeight>0.0001</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>great goblin</leaderTitle>
+    <expandingIconTexture>World/OrcsMordor</expandingIconTexture>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<techLevel>Neolithic</techLevel>
+		<backstoryCategories><li>Raider</li></backstoryCategories>
+		<geneticVariance>0.8</geneticVariance>
+		<hairTags>
+			<li>LotROG_OrcGoblin</li>
+		</hairTags>
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- Normal fights, standard mix -->
+        <kindDef>Combat</kindDef>
+        <options>
+		  <LotROG_OrcMordor>5</LotROG_OrcMordor>
+          <LotROG_OrcMordor_Fighter>10</LotROG_OrcMordor_Fighter>
+          <LotROG_OrcMordor_Ranged>1.5</LotROG_OrcMordor_Ranged>
+          <LotROG_OrcMordor_Chief>10</LotROG_OrcMordor_Chief>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+		  <LotROG_OrcMordor>5</LotROG_OrcMordor>
+          <LotROG_OrcMordor_Fighter>10</LotROG_OrcMordor_Fighter>
+          <LotROG_OrcMordor_Ranged>1.5</LotROG_OrcMordor_Ranged>
+          <LotROG_OrcMordor_Chief>10</LotROG_OrcMordor_Chief>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <LotROG_OrcMordor_Trader>1</LotROG_OrcMordor_Trader>
+        </traders>
+        <carriers>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+		  <LotROG_OrcMordor>5</LotROG_OrcMordor>
+          <LotROG_OrcMordor_Fighter>10</LotROG_OrcMordor_Fighter>
+          <LotROG_OrcMordor_Ranged>1.5</LotROG_OrcMordor_Ranged>
+          <LotROG_OrcMordor_Chief>10</LotROG_OrcMordor_Chief>
+		</guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+		  <LotROG_OrcMordor>5</LotROG_OrcMordor>
+          <LotROG_OrcMordor_Fighter>10</LotROG_OrcMordor_Fighter>
+          <LotROG_OrcMordor_Ranged>1.5</LotROG_OrcMordor_Ranged>
+          <LotROG_OrcMordor_Chief>10</LotROG_OrcMordor_Chief>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
+  </FactionDef>
+
+
+</Defs>
