@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\RimQuest\Assemblies" t="ExcludeRecursive" />
+    <e p="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\RimQuest\Source" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="RimQuest" t="IncludeRecursive">
+        <e p="Dialog_QuestGiver.cs" t="Include" />
+        <e p="HarmonyRimQuest.cs" t="Include" />
+        <e p="JobDriver_QuestWithPawn.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="QuestGenOption.cs" t="Include" />
+        <e p="QuestGiverDef.cs" t="Include" />
+        <e p="QuestPawn.cs" t="Include" />
+        <e p="RimQuest.csproj" t="IncludeRecursive" />
+        <e p="RimQuestDefOf.cs" t="Include" />
+        <e p="RimQuestMod.cs" t="Include" />
+        <e p="RimQuestTracker.cs" t="Include" />
+        <e p="RimQuestUtility.cs" t="Include" />
+      </e>
+      <e p="RimQuest.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\mattw\.Rider2018.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\mattw\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\mattw\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_RimQuest.-1842210007.00" t="ExcludeRecursive" />
+  </component>
+</project>

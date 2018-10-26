@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Lord-of-the-Rims---Orcs-and-Goblins\Assemblies" t="ExcludeRecursive" />
+    <e p="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Lord-of-the-Rims---Orcs-and-Goblins\Source" t="IncludeFlat">
+      <e p="LotROG" t="IncludeRecursive">
+        <e p="HarmonyRimQuest.cs" t="Include" />
+        <e p="LotROG.csproj" t="IncludeRecursive" />
+        <e p="MelkorPit.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+      </e>
+      <e p="LotROG.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\mattw\.Rider2018.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\mattw\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\mattw\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_LotROG.1843056354.00" t="ExcludeRecursive" />
+  </component>
+</project>
