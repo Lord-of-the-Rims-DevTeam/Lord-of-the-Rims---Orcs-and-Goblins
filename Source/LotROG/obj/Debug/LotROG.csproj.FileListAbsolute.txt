@@ -1,0 +1,5 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Lord-of-the-Rims---Orcs-and-Goblins\Assemblies\LotROG.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Lord-of-the-Rims---Orcs-and-Goblins\Source\LotROG\obj\Debug\LotROG.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Lord-of-the-Rims---Orcs-and-Goblins\Source\LotROG\obj\Debug\LotROG.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Lord-of-the-Rims---Orcs-and-Goblins\Source\LotROG\obj\Debug\LotROG.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Lord-of-the-Rims---Orcs-and-Goblins\Source\LotROG\obj\Debug\LotROG.dll

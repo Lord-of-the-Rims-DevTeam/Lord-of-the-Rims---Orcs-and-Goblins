@@ -50,7 +50,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alert_OrcPrestige.cs" />
     <Compile Include="HarmonyRimQuest.cs" />
+    <Compile Include="MapComponent_OrcPrestige.cs" />
     <Compile Include="MelkorPit.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

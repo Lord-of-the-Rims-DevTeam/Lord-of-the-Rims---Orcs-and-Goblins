@@ -37,7 +37,7 @@
 			<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
 		</li>
 	</comps>
-	<tradeability>Never</tradeability>
+	<tradeability>None</tradeability>
 	<destroyOnDrop>True</destroyOnDrop>
 	<menuHidden>True</menuHidden>
 	</ThingDef>
@@ -61,13 +61,11 @@
       <baseBodySize>4.0</baseBodySize>
       <baseHealthScale>3.6</baseHealthScale>
       <foodType>Meat</foodType>
-      <leatherColor>(189,161,116)</leatherColor>
-      <leatherInsulation>1.0</leatherInsulation>
       <gestationPeriodDays>60</gestationPeriodDays>
       <wildness>0.97</wildness>
       <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 	  <intelligence>ToolUser</intelligence>
-      <trainableIntelligence>Advanced</trainableIntelligence>
+      <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>20</lifeExpectancy>
       <lifeStageAges>
@@ -181,7 +179,7 @@
 			<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
 		</li>
 	</comps>
-	<tradeability>Never</tradeability>
+	<tradeability>None</tradeability>
 	<destroyOnDrop>True</destroyOnDrop>
 	<menuHidden>True</menuHidden>
 	</ThingDef>
@@ -203,13 +201,11 @@
       <baseBodySize>4.0</baseBodySize>
       <baseHealthScale>3.6</baseHealthScale>
       <foodType>Meat</foodType>
-      <leatherColor>(189,161,116)</leatherColor>
-      <leatherInsulation>1.0</leatherInsulation>
       <gestationPeriodDays>60</gestationPeriodDays>
       <wildness>0.97</wildness>
       <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 	  <intelligence>ToolUser</intelligence>
-      <trainableIntelligence>Advanced</trainableIntelligence>
+      <trainability>Advanced</trainability>
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <lifeExpectancy>20</lifeExpectancy>
       <lifeStageAges>

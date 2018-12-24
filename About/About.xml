@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Lord of the Rims - Orcs and Goblins 1.0</name>
+	<name>Lord of the Rims - Orcs and Goblins</name>
 	<author>Mingji Lim aka WalkingProblem</author>
 	<url>http://walkingproblem.com</url>
-	<targetVersion>0.19.0</targetVersion>
+	<targetVersion>1.0.0</targetVersion>
 	<description>Orc, Goblins and Uruk Hai....</description>
 </ModMetaData>
